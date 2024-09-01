@@ -33,7 +33,7 @@ margin-top: 20px;
 /* direct tag styles  */
 
 header{
-    margin-bottom:85px;
+    /* margin-bottom:85px; */
     /* at first  it worked but now it does't*/
     /* now it is works on bg-color */
     max-width: 1922px;
