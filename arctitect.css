@@ -1,0 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-normal {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+.btn-primary{
+color: white;
+border: none;
+border-radius: 8px;
+background-color: rgba(255, 144, 14, 1);
+font-size: 1.2rem;
+font-weight: 600;
+padding: 20px 25px;
+margin-top: 20px;
+}
+.nav-bar,.banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.font-bold-size{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+/* direct tag styles  */
+
+header{
+    margin-bottom:85px;
+    /* at first  it worked but now it does't*/
+    /* now it is works on bg-color */
+    max-width: 1922px;
+    margin: 0 auto;
+}
+section{
+    margin-bottom: 130px;
+}
+main{
+    max-width:1440px;
+    margin: 0 auto;
+}
+/* dark 2 */
+.dark-gray{
+    color: rgba(66, 66, 66, 1);
+}
+/* dark 3 */
+.light-gray{
+    color: rgba(114, 114, 114, 1);
+}
+/* bg-color */
+.bg-color{
+    background-color: rgba(255, 144, 14, 0.1);
+    height: 1300px;
+    /* i want fixed the height with max-hight but does not working .this height need for expended some height at the bottom*/
+    margin-bottom: 85px;
+    /* why is it not working at header*/
+}
+
+/* navbar styles */
+.nav-title{
+font-size: 2.8rem;
+font-weight: bold;
+}
+
+.nav-bar{
+justify-content: space-between;
+align-items: center;
+}
+.nav-ul{
+gap: 30px;
+}
+.nav-li{
+    list-style: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.nav-link{
+    text-decoration: none;
+}
+/* banner styles */
+
+.banner-info{
+    max-width: 862px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: bold;
+    /* my title is not excetly same as the figma file.some word need to go second line*/
+}
+.banner-img{
+    width: 100%;
+}
+/* quick list feature styles */
+.feature{
+    align-items: center;
+}
+.feature-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    /* padding-left: 30px; */
+}
+.feature-info{
+margin-left: 73px;
+}
+.feature-title{
+    width: 468px;
+}
+.quick-list{  
+    font-weight: 500;
+    font-size: 2.8rem;
+}
+.word-feature{
+color: rgba(255, 144, 14, 1);
+}
+/* love and enjoy feature styles */
+.feature-enjoy-and-love{
+    gap: 54px;
+    
+}
+.lovely-feature-img{
+    width: 100%;
+}
+/* some facts style */
+
+
+/* sponsor styles */
+
+/* footer style */
+
+
+/* media query for small device */
+
+
+/* media query for medium device */
+
