@@ -37,14 +37,17 @@ header{
     /* at first  it worked but now it does't*/
     /* now it is works on bg-color */
     max-width: 1922px;
-    margin: 0 auto;
+     margin: 0 auto;
 }
 section{
-    margin-bottom: 130px;
+    margin-top: 130px;
 }
 main{
     max-width:1440px;
     margin: 0 auto;
+}
+img{
+    width: 100%;
 }
 /* dark 2 */
 .dark-gray{
@@ -57,10 +60,10 @@ main{
 /* bg-color */
 .bg-color{
     background-color: rgba(255, 144, 14, 0.1);
-    height: 1300px;
+    /* height: 1300px; */
     /* i want fixed the height with max-hight but does not working .this height need for expended some height at the bottom*/
-    margin-bottom: 85px;
-    /* why is it not working at header*/
+    /* margin-bottom: 85px; */
+    /* why is it not working at header tag*/
 }
 
 /* navbar styles */
@@ -112,6 +115,7 @@ gap: 30px;
 }
 .feature-info{
 margin-left: 73px;
+max-width: 530px;
 }
 .feature-title{
     width: 468px;
@@ -141,6 +145,33 @@ color: rgba(255, 144, 14, 1);
 
 /* media query for small device */
 
+@media screen and (max-width: 576px) {
+    .nav-bar, .nav-ul,.feature{
+        flex-direction: column;
+    }
+    /* display-flex class dile o cholbe .jeheto eta class hisabe sob golo te ase so eta dile r kono class dite hbe bole mon e hoi na. */
+    
+    /* .banner-title,.feature-info,.feature-title,.display-flex{
+        width: 100%;
+    } */
+
+    .feature-info{
+        margin-left: 70px;
+    }
+    .feature-images{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .feature-enjoy-and-love{
+        flex-direction: column;
+    }
+}
 
 /* media query for medium device */
-
+@media screen and (min-width: 576px) and (max-width:992px){
+.feature{
+    flex-direction: column;
+}
+.feature-info{
+    margin: 50px auto;
+}
+}
