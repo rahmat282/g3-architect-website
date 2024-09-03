@@ -47,7 +47,7 @@ main{
     margin: 0 auto;
 }
 img{
-    width: 100%;
+    /* width: 100%; */
 }
 /* dark 2 */
 .dark-gray{
@@ -128,18 +128,75 @@ max-width: 530px;
 color: rgba(255, 144, 14, 1);
 }
 /* love and enjoy feature styles */
-.feature-enjoy-and-love{
-    gap: 54px;
-    
+.lovely-feature-heading{
+    border-left: 5px solid rgba(255, 144, 14, 1);
+    padding-left: 21px;
 }
-.lovely-feature-img{
-    width: 100%;
+.feature-enjoy-and-love{
+    gap: 146px; 
+}
+.lovely-feature-card{
+    padding: 30px;
+    /* box-shadow:0 4px 30px 0 rgba(0, 0, 0, 0.06); */
+
+    /* eikhan e figma te 2 box-shadow er measurement ase.
+    first e niche jeita disi ,seta ase and aro 2 ta click korle uporer ta ase.
+    jhankar vai uporer ta dise jeita shadow kom hoi.*/
+    box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    border-radius: 8px;
 }
 /* some facts style */
+.fact-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin:100px 50px;
+}
+.fact-pera{
+    max-width: 540px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.fact-card{
+    border: 1px solid rgba(255, 144, 14, 1);
+    border-radius: 8px;
+    height: 240px;
+    width: 240px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
 
+.fact-number{
+    font-size: 2.8rem;
+font-weight: 600;
+margin-top: 5px;
+margin-bottom: 10px;
+}
+
+.fact-name , .lovely-feature-card-title{
+    font-size: 1.25rem;
+font-weight: 600;
+margin-top: 0px;
+margin: 0px;
+}
 
 /* sponsor styles */
 
+.sponsor-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.sponsor-img-div{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.sponsor-img-div img{
+    filter: grayscale(100%);
+}
 /* footer style */
 
 
@@ -158,8 +215,16 @@ color: rgba(255, 144, 14, 1);
     .feature-info{
         margin-left: 70px;
     }
-    .feature-images{
-        grid-template-columns: repeat(1, 1fr);
+    .feature-images, .fact-container, .sponsor-img-div{
+        grid-template-columns: 1fr;
+    }
+    .fact-container{
+justify-items: center;
+gap: 24px;
+    }
+    .sponsor-img-div{
+        justify-items: center;
+        gap: 50px;
     }
     .feature-enjoy-and-love{
         flex-direction: column;
@@ -173,5 +238,10 @@ color: rgba(255, 144, 14, 1);
 }
 .feature-info{
     margin: 50px auto;
+}
+.sponsor-img-div, .fact-container{
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    justify-items:center;
 }
 }
