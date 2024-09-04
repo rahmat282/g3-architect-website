@@ -49,6 +49,18 @@ main{
 img{
     /* width: 100%; */
 }
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+max-width: 1440px;
+height: 100px;
+/* why max-height doesn't work here.and why only height is working */
+border-radius: 8px;
+text-align: center;
+margin: 130px auto;
+
+}
 /* dark 2 */
 .dark-gray{
     color: rgba(66, 66, 66, 1);
@@ -58,7 +70,7 @@ img{
     color: rgba(114, 114, 114, 1);
 }
 /* bg-color */
-.bg-color{
+.bg-color , footer{
     background-color: rgba(255, 144, 14, 0.1);
     /* height: 1300px; */
     /* i want fixed the height with max-hight but does not working .this height need for expended some height at the bottom*/
@@ -127,6 +139,7 @@ max-width: 530px;
 .word-feature{
 color: rgba(255, 144, 14, 1);
 }
+
 /* love and enjoy feature styles */
 .lovely-feature-heading{
     border-left: 5px solid rgba(255, 144, 14, 1);
@@ -134,6 +147,9 @@ color: rgba(255, 144, 14, 1);
 }
 .feature-enjoy-and-love{
     gap: 146px; 
+}
+.feature-enjoy-and-love img{
+    width: 100%;
 }
 .lovely-feature-card{
     padding: 30px;
@@ -145,6 +161,17 @@ color: rgba(255, 144, 14, 1);
     box-shadow:0 4px 4px 0 rgba(0, 0, 0, 0.25);
     margin-bottom: 20px;
     border-radius: 8px;
+}
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: -130px;
+    margin-left: -100px;
+}
+#year{
+    font-size: 4rem;
+    font-weight: 700;
 }
 /* some facts style */
 .fact-container{
@@ -199,11 +226,14 @@ margin: 0px;
 }
 /* footer style */
 
-
+footer p{
+    font-size: 1.25rem;
+    
+}
 /* media query for small device */
 
 @media screen and (max-width: 576px) {
-    .nav-bar, .nav-ul,.feature{
+    .nav-bar, .nav-ul,.feature-enjoy-and-love,.feature{
         flex-direction: column;
     }
     /* display-flex class dile o cholbe .jeheto eta class hisabe sob golo te ase so eta dile r kono class dite hbe bole mon e hoi na. */
@@ -218,6 +248,12 @@ margin: 0px;
     .feature-images, .fact-container, .sponsor-img-div{
         grid-template-columns: 1fr;
     }
+
+    /* .feature-pera{
+        max-width:fit-content;
+    } */
+      /* this is not working. */
+
     .fact-container{
 justify-items: center;
 gap: 24px;
@@ -226,14 +262,15 @@ gap: 24px;
         justify-items: center;
         gap: 50px;
     }
-    .feature-enjoy-and-love{
-        flex-direction: column;
+    #experience-badge{
+        margin-top: 10px;
+        margin-left: 10px;
     }
 }
 
 /* media query for medium device */
 @media screen and (min-width: 576px) and (max-width:992px){
-.feature{
+.feature, .feature-enjoy-and-love,.nav-bar{
     flex-direction: column;
 }
 .feature-info{
@@ -243,5 +280,13 @@ gap: 24px;
     grid-template-columns: repeat(2,1fr);
     gap: 50px;
     justify-items:center;
+}
+
+.feature-enjoy-and-love img,.feature-enjoy-and-love-info{
+    width:fit-content
+}
+#experience-badge{
+    margin-top: 10px;
+    margin-left: 10px;
 }
 }
